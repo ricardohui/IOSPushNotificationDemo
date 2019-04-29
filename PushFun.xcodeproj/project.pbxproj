@@ -7,14 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B86C0CF41F05A40A00463FE3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B86C0CF31F05A40600463FE3 /* GoogleService-Info.plist */; };
 		B895A3E41F05A1FB00560C49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B895A3E31F05A1FB00560C49 /* AppDelegate.swift */; };
 		B895A3E61F05A1FB00560C49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B895A3E51F05A1FB00560C49 /* ViewController.swift */; };
 		B895A3E91F05A1FB00560C49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B895A3E71F05A1FB00560C49 /* Main.storyboard */; };
 		B895A3EB1F05A1FB00560C49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B895A3EA1F05A1FB00560C49 /* Assets.xcassets */; };
 		B895A3EE1F05A1FB00560C49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B895A3EC1F05A1FB00560C49 /* LaunchScreen.storyboard */; };
+		E5DBFBE55B7F112B580DF52F /* Pods_PushFun.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A2A79993BCAE9BFF29C3DAC /* Pods_PushFun.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		25EF63DF053E45C1F780FECD /* Pods-PushFun.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushFun.release.xcconfig"; path = "Pods/Target Support Files/Pods-PushFun/Pods-PushFun.release.xcconfig"; sourceTree = "<group>"; };
+		7A2A79993BCAE9BFF29C3DAC /* Pods_PushFun.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PushFun.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93B6F8461C58A5EDB950D1C6 /* Pods-PushFun.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushFun.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PushFun/Pods-PushFun.debug.xcconfig"; sourceTree = "<group>"; };
+		B86C0CF31F05A40600463FE3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B86C0CF51F05B26D00463FE3 /* PushFun.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PushFun.entitlements; sourceTree = "<group>"; };
 		B895A3E01F05A1FB00560C49 /* PushFun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PushFun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B895A3E31F05A1FB00560C49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B895A3E51F05A1FB00560C49 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +36,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5DBFBE55B7F112B580DF52F /* Pods_PushFun.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C210A5D3CA2161ACC06C230 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				93B6F8461C58A5EDB950D1C6 /* Pods-PushFun.debug.xcconfig */,
+				25EF63DF053E45C1F780FECD /* Pods-PushFun.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7C36DAF1352040C4852D5923 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7A2A79993BCAE9BFF29C3DAC /* Pods_PushFun.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B895A3D71F05A1FB00560C49 = {
 			isa = PBXGroup;
 			children = (
 				B895A3E21F05A1FB00560C49 /* PushFun */,
 				B895A3E11F05A1FB00560C49 /* Products */,
+				1C210A5D3CA2161ACC06C230 /* Pods */,
+				7C36DAF1352040C4852D5923 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +81,8 @@
 		B895A3E21F05A1FB00560C49 /* PushFun */ = {
 			isa = PBXGroup;
 			children = (
+				B86C0CF51F05B26D00463FE3 /* PushFun.entitlements */,
+				B86C0CF31F05A40600463FE3 /* GoogleService-Info.plist */,
 				B895A3E31F05A1FB00560C49 /* AppDelegate.swift */,
 				B895A3E51F05A1FB00560C49 /* ViewController.swift */,
 				B895A3E71F05A1FB00560C49 /* Main.storyboard */,
@@ -71,9 +100,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B895A3F21F05A1FB00560C49 /* Build configuration list for PBXNativeTarget "PushFun" */;
 			buildPhases = (
+				DE21A399DB387253421457CF /* [CP] Check Pods Manifest.lock */,
 				B895A3DC1F05A1FB00560C49 /* Sources */,
 				B895A3DD1F05A1FB00560C49 /* Frameworks */,
 				B895A3DE1F05A1FB00560C49 /* Resources */,
+				4E6A8EA629E2D2CAE880D06D /* [CP] Embed Pods Frameworks */,
+				AFFA3D627E9482DFF7EE7B94 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +128,11 @@
 				TargetAttributes = {
 					B895A3DF1F05A1FB00560C49 = {
 						CreatedOnToolsVersion = 9.0;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -123,12 +160,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				B895A3EE1F05A1FB00560C49 /* LaunchScreen.storyboard in Resources */,
+				B86C0CF41F05A40A00463FE3 /* GoogleService-Info.plist in Resources */,
 				B895A3EB1F05A1FB00560C49 /* Assets.xcassets in Resources */,
 				B895A3E91F05A1FB00560C49 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4E6A8EA629E2D2CAE880D06D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PushFun/Pods-PushFun-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFFA3D627E9482DFF7EE7B94 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PushFun/Pods-PushFun-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE21A399DB387253421457CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B895A3DC1F05A1FB00560C49 /* Sources */ = {
@@ -267,8 +353,11 @@
 		};
 		B895A3F31F05A1FB00560C49 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93B6F8461C58A5EDB950D1C6 /* Pods-PushFun.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PushFun/PushFun.entitlements;
+				DEVELOPMENT_TEAM = WLDBM3YRW9;
 				INFOPLIST_FILE = PushFun/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zappycode.PushFun;
@@ -280,8 +369,11 @@
 		};
 		B895A3F41F05A1FB00560C49 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25EF63DF053E45C1F780FECD /* Pods-PushFun.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PushFun/PushFun.entitlements;
+				DEVELOPMENT_TEAM = WLDBM3YRW9;
 				INFOPLIST_FILE = PushFun/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zappycode.PushFun;
@@ -310,6 +402,7 @@
 				B895A3F41F05A1FB00560C49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
